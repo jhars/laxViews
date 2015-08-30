@@ -50,12 +50,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',//FAVORITES
+    .state('app.myteams', {
+      url: '/myteams',//FAVORITES
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'//++++++++++++++++>>> FAVORITES
+          templateUrl: 'templates/myteams.html',
+          controller: 'MyTeamsCtrl'//++++++++++++++++>>> FAVORITES
         }
       }
     })
@@ -70,5 +70,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');//NATIONAL TEAMS
+  $urlRouterProvider.otherwise('/app/myteams');//NATIONAL TEAMS
 });

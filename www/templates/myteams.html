@@ -1,0 +1,10 @@
+<ion-view view-title="My Teams">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="team in teams" href="#/app/myteams">
+        {{ team.natRank }} {{team.teamName}}
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

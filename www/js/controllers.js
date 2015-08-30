@@ -41,15 +41,26 @@ app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {//TEAM CONTROLLER
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('MyTeamsCtrl', function($scope) {//TEAM CONTROLLER
+  $scope.teams = [
+    // { title: 'Reggae', id: 1 },
+    // { title: 'Chill', id: 2 },
+    // { title: 'Dubstep', id: 3 },
+    // { title: 'Indie', id: 4 },
+    // { title: 'Rap', id: 5 },
+    // { title: 'Cowbell', id: 6 }
+    {"teamName":"Cranbrook ",id: 1, "state":"MI","natRank":" 674","record":" 14- 9- 0 ","powerRating":"93.99","teamURL":"XCRAMI.PHP"},
+    {"teamName":"Lake Brantley ",id: 2, "state":"FL","natRank":" 675","record":" 10- 6- 0 ","powerRating":"93.99","teamURL":"XLABFL.PHP"},
+    {"teamName":"Hoover/No. Canton ",id: 3, "state":"OH","natRank":" 676","record":" 13- 5- 0 ","powerRating":"93.99","teamURL":"XHOOOH.PHP"},
+    {"teamName":"Hill School ","state":"PA",id: 4, "natRank":" 677","record":" 10- 8- 0 ","powerRating":"93.99","teamURL":"XHILPA.PHP"}
   ];
+  // { title: 'Reggae', id: 1 },
+  // { title: 'Chill', id: 2 },
+  // { title: 'Dubstep', id: 3 },
+  // { title: 'Indie', id: 4 },
+  // { title: 'Rap', id: 5 },
+  // { title: 'Cowbell', id: 6 }
+
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

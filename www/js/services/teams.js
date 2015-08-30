@@ -1,5 +1,5 @@
 app.factory('teams', ['$http', function($http) { 
-  return $http.get('assets/allteams.json') 
+  return $http.get('assets/top25.json') 
             // .success(function(data) { 
             //  console.log('json data received')
             //  console.log(data[0]);
